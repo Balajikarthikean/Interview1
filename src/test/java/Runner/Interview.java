@@ -32,9 +32,21 @@ public class Interview {
 		WebElement unit = driver.findElement(By.xpath("//span[text() = 'Unit Test']"));
 		unit.click();
 		
-		Thread.sleep(30000);
-//		WebElement findElement2 = driver.findElement(By.xpath("//span[text()='intermediate']//preceding::input[@value='3']"));
-//		findElement2.click();
+		Thread.sleep(3000);
+		WebElement rating = driver.findElement(By.xpath("//input[@type='range']"));
+		
+		
+//		js.executeScript("arguments[0].click();", rating);
+		
+		//js.executeScript("arguments[0].setAttribute('value' , '3')", rating);
+		
+		
+		Thread.sleep(2000);
+		
+		WebElement rating1 = driver.findElement(By.xpath("//input[@type='range']"));
+    	rating1.click();
+//		js.executeScript("arguments[0].click();", rating1);
+    	Thread.sleep(3000);
 		unit.click();
 		softq.click();
 	}
