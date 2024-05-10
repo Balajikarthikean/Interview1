@@ -38,6 +38,7 @@ public class Interview {
 		
 //		js.executeScript("arguments[0].click();", rating);
 		
+		// if i change the value here it getting default value to 2
 		//js.executeScript("arguments[0].setAttribute('value' , '3')", rating);
 		
 		
